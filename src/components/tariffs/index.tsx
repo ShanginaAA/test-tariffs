@@ -11,6 +11,8 @@ import Content from './components/Content';
 import { useAppDispatch } from '@/lib/hooks/useAppDispatch';
 import { fetchTariffs, selectTariffs } from '@/lib/store/tariffs';
 import { useAppSelector } from '@/lib/hooks/useAppSelector';
+import Title from './components/Title';
+import ImageMen from './components/ImageMen';
 
 const positionClasses = [
   'top-[366px] sm:top-[425px]',
@@ -47,18 +49,8 @@ const Tariffs = () => {
 
   return (
     <>
-      <h1
-        className="absolute left-4 top-[94px] md:left-[352px] md:top-[153px] sm:top-[105px]
-      font-[700] text-[22px] md:text-[40px] sm:text-2xl leading-[110%] tracking-[0.01em]"
-      >
-        Выбери подходящий для себя <span className="text-[#FDB056]">тариф</span>
-      </h1>
-      <div
-        className="absolute left-[110px] top-[166px] sm:left-[125px] sm:top-[177px] md:left-[352px] md:top-[359px]
-      w-[99px] h-[200px] sm:w-[124px] sm:h-[250px] md:w-[380px] md:h-[767px]"
-      >
-        <img src="/img.png" alt="Мужчина" />
-      </div>
+      <Title />
+      <ImageMen />
 
       {[...tariffs]
         .reverse()

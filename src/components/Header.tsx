@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React, { useContext, useEffect, useState } from 'react';
 
 const Header = () => {
-  const [timeLeft, setTimeLeft] = useState(5);
+  const [timeLeft, setTimeLeft] = useState(120);
   const [isBlinking, setIsBlinking] = useState(false);
   const { updateTimerFinished } = useContext(TimerContext);
 
@@ -45,7 +45,7 @@ const Header = () => {
         </h2>
       </div>
       <div className="flex flex-row items-center content-center gap-2">
-        <Image src="/star.png" height={14} width={14} alt="Звезда" />
+        <Image src="/star.svg" height={14} width={14} alt="Звезда" />
         <div
           className={`flex flex-row items-center gap-1.5 font-bold text-[#ffbb00] leading-[110%] 
           text-[28px] md:text-[40px] sm:text-[32px] ${
@@ -59,7 +59,7 @@ const Header = () => {
           <p>{seconds[1]}</p>
         </div>
 
-        <Image src="/star.png" height={14} width={14} alt="Звезда" />
+        <Image src="/star.svg" height={14} width={14} alt="Звезда" />
       </div>
     </div>
   );
