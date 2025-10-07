@@ -4,10 +4,10 @@
   //   border-radius: 0.5rem;
   cursor: pointer;
 
-  &:hover {
-    background-color: rgba(243, 244, 246, 0.5);
-    transition: all 0.2s ease-in-out;
-  }
+  // &:hover {
+  //   background-color: rgba(243, 244, 246, 0.5);
+  //   transition: all 0.2s ease-in-out;
+  // }
 
   &.selected {
     border-color: #81fe95;

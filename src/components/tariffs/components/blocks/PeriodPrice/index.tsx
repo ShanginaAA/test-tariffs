@@ -37,7 +37,7 @@ const PeriodPrice: FC<PeriodPriceProps> = ({ period, price, fullPrice, isBest })
       <div className="flex flex-col items-end">
         {/* Скидочная цена */}
         <span
-          className={`font-[600] text-[30px] sm:text-[34px] md:text-[50px] transition-all duration-500 leading-[100%] ${
+          className={`font-[600] text-[27px] sm:text-[34px] md:text-[50px] transition-all duration-500 leading-[100%] ${
             showDiscount
               ? 'opacity-100 transform translate-y-0 text-[#FDB056]'
               : 'opacity-0 transform -translate-y-2 absolute'
@@ -48,7 +48,7 @@ const PeriodPrice: FC<PeriodPriceProps> = ({ period, price, fullPrice, isBest })
 
         {/* Полная цена */}
         <span
-          className={`font-[600] text-[27px] sm:text-[34px] md:text-[50px] leading-[100%] ${
+          className={`font-[600] text-[27px] sm:text-[34px] md:text-[50px] transition-all duration-500 leading-[100%] ${
             !showDiscount
               ? 'opacity-100 transform translate-y-0'
               : 'opacity-0 transform translate-y-2 absolute'

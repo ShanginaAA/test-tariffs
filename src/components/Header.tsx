@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React, { useContext, useEffect, useState } from 'react';
 
 const Header = () => {
-  const [timeLeft, setTimeLeft] = useState(120);
+  const [timeLeft, setTimeLeft] = useState(3);
   const [isBlinking, setIsBlinking] = useState(false);
   const { updateTimerFinished } = useContext(TimerContext);
 

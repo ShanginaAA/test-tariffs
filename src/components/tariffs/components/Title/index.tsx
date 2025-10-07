@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { RefObject, useEffect, useRef } from 'react';
 import { animate } from 'animejs';
 
 const Title = () => {
-  const titleRef = useRef(null);
-  const spanRef = useRef(null);
+  const titleRef: RefObject<HTMLHeadingElement | null> = useRef<HTMLHeadingElement>(null);
+  const spanRef: RefObject<HTMLSpanElement | null> = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     if (titleRef.current && spanRef.current) {
